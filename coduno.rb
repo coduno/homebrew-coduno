@@ -1,7 +1,7 @@
 require 'formula'
 
 class Coduno < Formula
-  arch = MacOS.prefer_64_bit ? 'amd64' : '386'
+  arch = MacOS.prefer_64_bit? ? 'amd64' : '386'
   
   homepage 'http://cod.uno'
   url "https://drone.io/github.com/coduno/cli/files/darwin-#{arch}/coduno"
